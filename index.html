@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/valoraciones.css">
+    <title>Evaluación de Campañas Publicitarias</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Valoración de Campañas Publicitarias</h1>
+        <form>
+            <label for="campSeleccionada">Seleccione o introduzca el nombre de la campaña:</label>
+            <select>
+            <!-- opciones del select -->
+            </select>
+
+            <label for="nuevaCampania">Nueva campaña:</label>
+            <input type="text">
+
+            <label for="claridadMensaje">Claridad del mensaje (1-10):</label>
+            <input type="number" min="1" max="10">
+
+            <label for="medioSeleccionado">Medio principal:</label>
+            <label><input type="radio" > Medios Tradicionales</label>
+            <label><input type="radio" > Medios Online</label>
+
+            <label for="checkboxRating">Percepciones del usuario:</label>
+            <label><input type="checkbox" > Alineación con la marca</label>
+            <label><input type="checkbox" > Credibilidad y Confianza</label>
+            <label><input type="checkbox" > Atractivo Visual</label>
+
+            <button type="submit">Valorar campaña</button>
+        </form>
+
+        <div>
+            <h2>Tabla de Valoraciones</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre de la Campaña</th>
+                        <th>Media Claridad del Mensaje</th>
+                        <th>Medio Principal</th>
+                        <th>Percepción Más Repetida</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Filas de contenido -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
